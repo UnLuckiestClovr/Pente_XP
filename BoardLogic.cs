@@ -8,7 +8,10 @@ namespace Pente_WPFApp
 {
     internal class BoardLogic
     {
-        Pente_Board gameBoard = new Pente_Board();
+        private Pente_Board gameBoard = new Pente_Board();
+
+        // Returns Board from Backend Logic to Frontend for Viewing Logic
+        public Pente_Board getBoardState() { return gameBoard; }
 
         // Piece Placing Code
         public void placeBlack(int row, int column)
