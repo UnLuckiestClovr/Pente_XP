@@ -20,5 +20,6 @@ namespace Pente_WPFApp
         {
             InitializeComponent();
         }
+
     }
 }
