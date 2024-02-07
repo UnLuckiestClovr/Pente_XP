@@ -44,7 +44,7 @@ namespace Pente_WPFApp
         public int[,] checkCapture_Black(int[,] board, int row, int column)
         {
 
-            //Diagonal Down-Right = [row+1, column+1]
+            //Diagonal Down-Right = [row+, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column + i)];
@@ -56,7 +56,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Down = [row, column+1]
+            //Down = [row, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row), (column + i)];
@@ -69,7 +69,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Down-Left = [row-1, column+1]
+            //Diagonal Down-Left = [row-, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column + i)];
@@ -82,7 +82,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Left = [row-1, column]
+            //Left = [row-, column]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column)];
@@ -95,7 +95,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Up-Left = [row-1, column-1]
+            //Diagonal Up-Left = [row-, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column - i)];
@@ -108,7 +108,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Up = [row, column-1]
+            //Up = [row, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row), (column - i)];
@@ -121,7 +121,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Up-Right = [row+1, column-1]
+            //Diagonal Up-Right = [row+, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column - i)];
@@ -135,7 +135,7 @@ namespace Pente_WPFApp
             }
 
 
-            //Right = [row+1, column]
+            //Right = [row+, column]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column)];
@@ -155,7 +155,7 @@ namespace Pente_WPFApp
         public int[,] checkCapture_White(int[,] board, int row, int column)
         {
 
-            //Diagonal Down-Right = [row+1, column+1]
+            //Diagonal Down-Right = [row+, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column + i)];
@@ -168,7 +168,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Down = [row, column+1]
+            //Down = [row, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row), (column + i)];
@@ -181,7 +181,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Down-Left = [row-1, column+1]
+            //Diagonal Down-Left = [row-, column+]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column + i)];
@@ -194,7 +194,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Left = [row-1, column]
+            //Left = [row-, column]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column)];
@@ -207,7 +207,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Up-Left = [row-1, column-1]
+            //Diagonal Up-Left = [row-, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row - i), (column - i)];
@@ -220,7 +220,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Up = [row, column-1]
+            //Up = [row, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row), (column - i)];
@@ -233,7 +233,7 @@ namespace Pente_WPFApp
                 }
             }
 
-            //Diagonal Up-Right = [row+1, column-1]
+            //Diagonal Up-Right = [row+, column-]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column - i)];
@@ -247,7 +247,7 @@ namespace Pente_WPFApp
             }
 
 
-            //Right = [row+1, column]
+            //Right = [row+     , column]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column)];
