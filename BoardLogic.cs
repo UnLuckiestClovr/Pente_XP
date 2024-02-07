@@ -19,6 +19,8 @@ namespace Pente_WPFApp
 
             board[row, column] = 1;
 
+            board = checkCapture_Black(board, row, column);
+
             gameBoard.SetBoard(board);
         }
 
@@ -30,18 +32,20 @@ namespace Pente_WPFApp
 
             board[row, column] = 2;
 
+            board = checkCapture_White(board, row, column);
+
             gameBoard.SetBoard(board);
         }
 
         // "Capture" Code [ Can Capture exactly 2 Tiles, no less no more ]
-        public void checkCapture_Black(int[,] board, int row, int column)
+        public int[,] checkCapture_Black(int[,] board, int row, int column)
         {
 
             //Diagonal Down-Right = [row+1, column+1]
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row + i), (column + i)];
-                if (currentValue == 0) { break; }
+                if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i==3 && currentValue == 1) { 
                     board[(row + 1), (column + 1)] = 0; 
@@ -53,28 +57,208 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = board[(row), (column + i)];
-                if (currentValue == 0) { break; }
+                if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
+                {
+                    board[(row), (column + 1)] = 0;
+                    board[(row), (column + 2)] = 0;
+                }
+            }
+
+            //Diagonal Down-Left = [row-1, column+1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column + i)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row - 1), (column + 1)] = 0;
+                    board[(row - 2), (column + 2)] = 0;
+                }
+            }
+
+            //Left = [row-1, column]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row - 1), (column)] = 0;
+                    board[(row - 2), (column)] = 0;
+                }
+            }
+
+            //Diagonal Up-Left = [row-1, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column - i)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row - 1), (column - 1)] = 0;
+                    board[(row - 2), (column - 2)] = 0;
+                }
+            }
+
+            //Up = [row, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row), (column - i)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row), (column - 1)] = 0;
+                    board[(row), (column - 2)] = 0;
+                }
+            }
+
+            //Diagonal Up-Right = [row+1, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row + i), (column - i)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row + 1), (column - 1)] = 0;
+                    board[(row + 2), (column - 2)] = 0;
+                }
+            }
+
+
+            //Right = [row+1, column]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row + i), (column)];
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 3 && currentValue == 1)
+                {
+                    board[(row + 1), (column)] = 0;
+                    board[(row + 2), (column)] = 0;
+                }
+            }
+
+            return board;
+        }
+
+
+        public int[,] checkCapture_White(int[,] board, int row, int column)
+        {
+
+            //Diagonal Down-Right = [row+1, column+1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row + i), (column + i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
                 {
                     board[(row + 1), (column + 1)] = 0;
                     board[(row + 2), (column + 2)] = 0;
                 }
             }
 
+            //Down = [row, column+1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row), (column + i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row), (column + 1)] = 0;
+                    board[(row), (column + 2)] = 0;
+                }
+            }
+
             //Diagonal Down-Left = [row-1, column+1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column + i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row - 1), (column + 1)] = 0;
+                    board[(row - 2), (column + 2)] = 0;
+                }
+            }
 
             //Left = [row-1, column]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row - 1), (column)] = 0;
+                    board[(row - 2), (column)] = 0;
+                }
+            }
 
             //Diagonal Up-Left = [row-1, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row - i), (column - i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row - 1), (column - 1)] = 0;
+                    board[(row - 2), (column - 2)] = 0;
+                }
+            }
 
             //Up = [row, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row), (column - i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row), (column - 1)] = 0;
+                    board[(row), (column - 2)] = 0;
+                }
+            }
 
             //Diagonal Up-Right = [row+1, column-1]
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row + i), (column - i)];
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row + 1), (column - 1)] = 0;
+                    board[(row + 2), (column - 2)] = 0;
+                }
+            }
+
 
             //Right = [row+1, column]
-        }
+            for (int i = 1; i < 4; i++)
+            {
+                int currentValue = board[(row + i), (column)];
+                if (currentValue == 0 || currentValue == 2) { break; }
 
+                if (i == 3 && currentValue == 2)
+                {
+                    board[(row + 1), (column)] = 0;
+                    board[(row + 2), (column)] = 0;
+                }
+            }
+
+            return board;
+        }
 
     }
 
@@ -84,7 +268,7 @@ namespace Pente_WPFApp
         // 1 = Black
         // 2 = White
 
-        private int[,] board = { // 19x19 board for our Pente Board Game
+        private int[,] board = { // 13x13 board for our Pente Board Game
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //0
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //1
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //2
