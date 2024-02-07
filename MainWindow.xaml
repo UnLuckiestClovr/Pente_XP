@@ -6,8 +6,8 @@
         xmlns:local="clr-namespace:Pente_WPFApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="800">
-    <Border>
-        <Grid Width="501" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCFB5B5">
+    <Border x:Name="BorderBackground">
+        <Grid x:Name="PenteBoard_Grid" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCFB5B5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
@@ -50,6 +50,11 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
+            <Image x:Name="Grid_00" Grid.Column="0" HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="100">
+                <Image.OpacityMask>
+                    <ImageBrush/>
+                </Image.OpacityMask>
+            </Image>
         </Grid>
     </Border>
 </Window>
