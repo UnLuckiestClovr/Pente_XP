@@ -269,9 +269,6 @@ namespace Pente_WPFApp
         {
             gameBoard = new Pente_Board();
         }
-
-        
-
     }
 
     class Pente_Board // Stores Board State

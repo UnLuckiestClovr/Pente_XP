@@ -7,44 +7,55 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="800" Width="800">
     <Border x:Name="BorderBackground">
-        <Grid x:Name="PenteBoard_Grid" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCFB5B5">
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
+        <StackPanel>
+            <Grid x:Name="PenteBoard_Grid" Width="500" Height="500" Background="#FFCFB5B5"
+                  HorizontalAlignment="Center" Margin="20" >
 
-            </Grid.ColumnDefinitions>
-            
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
 
-            </Grid.RowDefinitions>
-            <Image x:Name="Grid_00" Grid.Column="0" HorizontalAlignment="Center" Height="100" Margin="0,10,0,0" Grid.RowSpan="5" VerticalAlignment="Top" Width="100">
-                <Image.OpacityMask>
-                    <ImageBrush/>
-                </Image.OpacityMask>
-            </Image>
-        </Grid>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+
+                </Grid.RowDefinitions>
+
+                <Border BorderBrush="#FF796A6A" BorderThickness="1.25">
+                    <Image x:Name="Grid_00" Grid.Column="0" HorizontalAlignment="Center" Margin="0,10,0,0" Grid.RowSpan="5" VerticalAlignment="Center">
+                        <Image.OpacityMask>
+                            <ImageBrush/>
+                        </Image.OpacityMask>
+                    </Image>
+                </Border>
+                
+
+            </Grid>
+            <Button x:Name="StartOrResetBtn" Content="Test Button" Width="269" Margin="100" Height="57" Click="StartOrResetBtn_Click"/>
+
+        </StackPanel>
     </Border>
 </Window>

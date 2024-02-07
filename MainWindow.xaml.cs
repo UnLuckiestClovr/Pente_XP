@@ -16,10 +16,16 @@ namespace Pente_WPFApp
     /// </summary>
     public partial class MainWindow : Window
     {
+        BoardLogic boardLogic = new BoardLogic();
+
         public MainWindow()
         {
             InitializeComponent();
         }
 
+        private void StartOrResetBtn_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show($"{boardLogic.getBoardState().toString()}");
+        }
     }
 }
