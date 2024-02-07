@@ -263,6 +263,15 @@ namespace Pente_WPFApp
             return board;
         }
 
+
+        // Reset / Clear Board
+        public void clearBoard()
+        {
+            gameBoard = new Pente_Board();
+        }
+
+        
+
     }
 
     class Pente_Board // Stores Board State
@@ -291,5 +300,30 @@ namespace Pente_WPFApp
         public int[,] GetBoard() { return board; }
 
         public void SetBoard(int[,] newBoard) { board = newBoard; }
+
+
+        // Print then Return Board as String for Testing Purposes
+        public string toString()
+        {
+            StringBuilder sb = new StringBuilder();
+
+            for (int row = 0; row < board.GetLength(0); row++)
+            {
+                Console.WriteLine($"Row {row} -->  ");
+
+                for (int col = 0; col < board.GetLength(1); col++)
+                {
+
+                    Console.Write($"{board[row,col]}");
+
+                    sb.Append($"{board[row, col]}");
+                    
+                }
+
+                sb.Append("\n");
+            }
+
+            return sb.ToString();
+        }
     }
 }
