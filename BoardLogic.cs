@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
@@ -295,8 +296,22 @@ namespace Pente_WPFApp
         };
 
         public int[,] GetBoard() { return board; }
+       
 
-        public void SetBoard(int[,] newBoard) { board = newBoard; }
+        public void SetBoard(int[,] newBoard) { 
+
+            foreach (int i in board) {
+                switch (i)
+                {
+                    case 0:
+                        
+
+                        break;
+                }
+            }
+            
+        
+        }
 
 
         // Print then Return Board as String for Testing Purposes
@@ -322,6 +337,7 @@ namespace Pente_WPFApp
 
             return sb.ToString();
         }
+        
     }
    
 }
