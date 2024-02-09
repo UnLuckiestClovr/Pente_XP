@@ -22,7 +22,7 @@ namespace Pente_WPFApp
         public MainWindow()
         {
             InitializeComponent();
-            //setupBoard();
+            setupBoard();
         }
 
         private void StartOrResetBtn_Click(object sender, RoutedEventArgs e)
@@ -53,18 +53,18 @@ namespace Pente_WPFApp
                     switch((board[k, l]))
                     {
                         case 0:
-                            imgary[k,l].Source = new BitmapImage(new Uri("", UriKind.Relative));
+                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/empty.png", UriKind.Relative));
                             break;
                         case 1:
                             imgary[k,l].Source = new BitmapImage(new Uri("Resources/whitecircle.png", UriKind.Relative));
                             break;
                         case 2:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
+                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/bctp.png", UriKind.Relative));
                             break;
 
                     }
                 }
-            imgary[0,0].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
+            //imgary[0,0].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
         }
     };
 
