@@ -38,180 +38,180 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0000" Width="auto" Height="auto" Grid.Column="0" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0001" Width="auto" Height="auto" Grid.Column="1" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0002" Width="auto" Height="auto" Grid.Column="2" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0003" Width="auto" Height="auto" Grid.Column="3" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0004" Width="auto" Height="auto" Grid.Column="4" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0005" Width="auto" Height="auto" Grid.Column="5" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0006" Width="auto" Height="auto" Grid.Column="6" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0007" Width="auto" Height="auto" Grid.Column="7" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0008" Width="auto" Height="auto" Grid.Column="8" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0009" Width="auto" Height="auto" Grid.Column="9" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0010" Width="auto" Height="auto" Grid.Column="10" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0011" Width="auto" Height="auto" Grid.Column="11" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0012" Width="auto" Height="auto" Grid.Column="12" Grid.Row="0"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0100" Width="auto" Height="auto" Grid.Column="0" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0101" Width="auto" Height="auto" Grid.Column="1" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0102" Width="auto" Height="auto" Grid.Column="2" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0103" Width="auto" Height="auto" Grid.Column="3" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0104" Width="auto" Height="auto" Grid.Column="4" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0105" Width="auto" Height="auto" Grid.Column="5" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0106" Width="auto" Height="auto" Grid.Column="6" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0107" Width="auto" Height="auto" Grid.Column="7" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0108" Width="auto" Height="auto" Grid.Column="8" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0109" Width="auto" Height="auto" Grid.Column="9" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0110" Width="auto" Height="auto" Grid.Column="10" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0111" Width="auto" Height="auto" Grid.Column="11" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0112" Width="auto" Height="auto" Grid.Column="12" Grid.Row="1"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0200" Width="auto" Height="auto" Grid.Column="0" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0201" Width="auto" Height="auto" Grid.Column="1" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0202" Width="auto" Height="auto" Grid.Column="2" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0203" Width="auto" Height="auto" Grid.Column="3" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0204" Width="auto" Height="auto" Grid.Column="4" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0205" Width="auto" Height="auto" Grid.Column="5" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0206" Width="auto" Height="auto" Grid.Column="6" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0207" Width="auto" Height="auto" Grid.Column="7" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0208" Width="auto" Height="auto" Grid.Column="8" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0209" Width="auto" Height="auto" Grid.Column="9" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0210" Width="auto" Height="auto" Grid.Column="10" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0211" Width="auto" Height="auto" Grid.Column="11" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0212" Width="auto" Height="auto" Grid.Column="12" Grid.Row="2"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0300" Width="auto" Height="auto" Grid.Column="0" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0301" Width="auto" Height="auto" Grid.Column="1" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0302" Width="auto" Height="auto" Grid.Column="2" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0303" Width="auto" Height="auto" Grid.Column="3" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0304" Width="auto" Height="auto" Grid.Column="4" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0305" Width="auto" Height="auto" Grid.Column="5" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0306" Width="auto" Height="auto" Grid.Column="6" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0307" Width="auto" Height="auto" Grid.Column="7" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0308" Width="auto" Height="auto" Grid.Column="8" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0309" Width="auto" Height="auto" Grid.Column="9" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0310" Width="auto" Height="auto" Grid.Column="10" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0311" Width="auto" Height="auto" Grid.Column="11" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0312" Width="auto" Height="auto" Grid.Column="12" Grid.Row="3"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0400" Width="auto" Height="auto" Grid.Column="0" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0401" Width="auto" Height="auto" Grid.Column="1" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0402" Width="auto" Height="auto" Grid.Column="2" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0403" Width="auto" Height="auto" Grid.Column="3" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0404" Width="auto" Height="auto" Grid.Column="4" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0405" Width="auto" Height="auto" Grid.Column="5" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0406" Width="auto" Height="auto" Grid.Column="6" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0407" Width="auto" Height="auto" Grid.Column="7" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0408" Width="auto" Height="auto" Grid.Column="8" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0409" Width="auto" Height="auto" Grid.Column="9" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0410" Width="auto" Height="auto" Grid.Column="10" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0411" Width="auto" Height="auto" Grid.Column="11" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0412" Width="auto" Height="auto" Grid.Column="12" Grid.Row="4"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0500" Width="auto" Height="auto" Grid.Column="0" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0501" Width="auto" Height="auto" Grid.Column="1" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0502" Width="auto" Height="auto" Grid.Column="2" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0503" Width="auto" Height="auto" Grid.Column="3" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0504" Width="auto" Height="auto" Grid.Column="4" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0505" Width="auto" Height="auto" Grid.Column="5" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0506" Width="auto" Height="auto" Grid.Column="6" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0507" Width="auto" Height="auto" Grid.Column="7" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0508" Width="auto" Height="auto" Grid.Column="8" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0509" Width="auto" Height="auto" Grid.Column="9" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0510" Width="auto" Height="auto" Grid.Column="10" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0511" Width="auto" Height="auto" Grid.Column="11" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0512" Width="auto" Height="auto" Grid.Column="12" Grid.Row="5"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0600" Width="auto" Height="auto" Grid.Column="0" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0601" Width="auto" Height="auto" Grid.Column="1" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0602" Width="auto" Height="auto" Grid.Column="2" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0603" Width="auto" Height="auto" Grid.Column="3" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0604" Width="auto" Height="auto" Grid.Column="4" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0605" Width="auto" Height="auto" Grid.Column="5" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0606" Width="auto" Height="auto" Grid.Column="6" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0607" Width="auto" Height="auto" Grid.Column="7" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0608" Width="auto" Height="auto" Grid.Column="8" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0609" Width="auto" Height="auto" Grid.Column="9" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0610" Width="auto" Height="auto" Grid.Column="10" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0611" Width="auto" Height="auto" Grid.Column="11" Grid.Row="6"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0612" Width="auto" Height="auto" Grid.Column="12" Grid.Row="6"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0000" Width="auto" Height="auto" Grid.Column="0" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0001" Width="auto" Height="auto" Grid.Column="1" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0002" Width="auto" Height="auto" Grid.Column="2" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0003" Width="auto" Height="auto" Grid.Column="3" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0004" Width="auto" Height="auto" Grid.Column="4" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0005" Width="auto" Height="auto" Grid.Column="5" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0006" Width="auto" Height="auto" Grid.Column="6" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0007" Width="auto" Height="auto" Grid.Column="7" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0008" Width="auto" Height="auto" Grid.Column="8" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0009" Width="auto" Height="auto" Grid.Column="9" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0010" Width="auto" Height="auto" Grid.Column="10" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0011" Width="auto" Height="auto" Grid.Column="11" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0012" Width="auto" Height="auto" Grid.Column="12" Grid.Row="0" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0100" Width="auto" Height="auto" Grid.Column="0" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0101" Width="auto" Height="auto" Grid.Column="1" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0102" Width="auto" Height="auto" Grid.Column="2" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0103" Width="auto" Height="auto" Grid.Column="3" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0104" Width="auto" Height="auto" Grid.Column="4" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0105" Width="auto" Height="auto" Grid.Column="5" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0106" Width="auto" Height="auto" Grid.Column="6" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0107" Width="auto" Height="auto" Grid.Column="7" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0108" Width="auto" Height="auto" Grid.Column="8" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0109" Width="auto" Height="auto" Grid.Column="9" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0110" Width="auto" Height="auto" Grid.Column="10" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0111" Width="auto" Height="auto" Grid.Column="11" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0112" Width="auto" Height="auto" Grid.Column="12" Grid.Row="1" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0200" Width="auto" Height="auto" Grid.Column="0" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0201" Width="auto" Height="auto" Grid.Column="1" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0202" Width="auto" Height="auto" Grid.Column="2" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0203" Width="auto" Height="auto" Grid.Column="3" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0204" Width="auto" Height="auto" Grid.Column="4" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0205" Width="auto" Height="auto" Grid.Column="5" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0206" Width="auto" Height="auto" Grid.Column="6" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0207" Width="auto" Height="auto" Grid.Column="7" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0208" Width="auto" Height="auto" Grid.Column="8" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0209" Width="auto" Height="auto" Grid.Column="9" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0210" Width="auto" Height="auto" Grid.Column="10" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0211" Width="auto" Height="auto" Grid.Column="11" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0212" Width="auto" Height="auto" Grid.Column="12" Grid.Row="2" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0300" Width="auto" Height="auto" Grid.Column="0" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0301" Width="auto" Height="auto" Grid.Column="1" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0302" Width="auto" Height="auto" Grid.Column="2" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0303" Width="auto" Height="auto" Grid.Column="3" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0304" Width="auto" Height="auto" Grid.Column="4" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0305" Width="auto" Height="auto" Grid.Column="5" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0306" Width="auto" Height="auto" Grid.Column="6" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0307" Width="auto" Height="auto" Grid.Column="7" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0308" Width="auto" Height="auto" Grid.Column="8" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0309" Width="auto" Height="auto" Grid.Column="9" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0310" Width="auto" Height="auto" Grid.Column="10" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0311" Width="auto" Height="auto" Grid.Column="11" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0312" Width="auto" Height="auto" Grid.Column="12" Grid.Row="3" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0400" Width="auto" Height="auto" Grid.Column="0" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0401" Width="auto" Height="auto" Grid.Column="1" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0402" Width="auto" Height="auto" Grid.Column="2" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0403" Width="auto" Height="auto" Grid.Column="3" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0404" Width="auto" Height="auto" Grid.Column="4" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0405" Width="auto" Height="auto" Grid.Column="5" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0406" Width="auto" Height="auto" Grid.Column="6" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0407" Width="auto" Height="auto" Grid.Column="7" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0408" Width="auto" Height="auto" Grid.Column="8" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0409" Width="auto" Height="auto" Grid.Column="9" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0410" Width="auto" Height="auto" Grid.Column="10" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0411" Width="auto" Height="auto" Grid.Column="11" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0412" Width="auto" Height="auto" Grid.Column="12" Grid.Row="4" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0500" Width="auto" Height="auto" Grid.Column="0" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0501" Width="auto" Height="auto" Grid.Column="1" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0502" Width="auto" Height="auto" Grid.Column="2" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0503" Width="auto" Height="auto" Grid.Column="3" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0504" Width="auto" Height="auto" Grid.Column="4" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0505" Width="auto" Height="auto" Grid.Column="5" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0506" Width="auto" Height="auto" Grid.Column="6" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0507" Width="auto" Height="auto" Grid.Column="7" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0508" Width="auto" Height="auto" Grid.Column="8" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0509" Width="auto" Height="auto" Grid.Column="9" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0510" Width="auto" Height="auto" Grid.Column="10" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0511" Width="auto" Height="auto" Grid.Column="11" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0512" Width="auto" Height="auto" Grid.Column="12" Grid.Row="5" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0600" Width="auto" Height="auto" Grid.Column="0" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0601" Width="auto" Height="auto" Grid.Column="1" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0602" Width="auto" Height="auto" Grid.Column="2" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0603" Width="auto" Height="auto" Grid.Column="3" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0604" Width="auto" Height="auto" Grid.Column="4" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0605" Width="auto" Height="auto" Grid.Column="5" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0606" Width="auto" Height="auto" Grid.Column="6" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0607" Width="auto" Height="auto" Grid.Column="7" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0608" Width="auto" Height="auto" Grid.Column="8" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0609" Width="auto" Height="auto" Grid.Column="9" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0610" Width="auto" Height="auto" Grid.Column="10" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0611" Width="auto" Height="auto" Grid.Column="11" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0612" Width="auto" Height="auto" Grid.Column="12" Grid.Row="6" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0700" Width="auto" Height="auto" Grid.Column="0" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0701" Width="auto" Height="auto" Grid.Column="1" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0702" Width="auto" Height="auto" Grid.Column="2" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0703" Width="auto" Height="auto" Grid.Column="3" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0704" Width="auto" Height="auto" Grid.Column="4" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0705" Width="auto" Height="auto" Grid.Column="5" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0706" Width="auto" Height="auto" Grid.Column="6" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0707" Width="auto" Height="auto" Grid.Column="7" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0708" Width="auto" Height="auto" Grid.Column="8" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0709" Width="auto" Height="auto" Grid.Column="9" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0710" Width="auto" Height="auto" Grid.Column="10" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0711" Width="auto" Height="auto" Grid.Column="11" Grid.Row="7"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0712" Width="auto" Height="auto" Grid.Column="12" Grid.Row="7"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0700" Width="auto" Height="auto" Grid.Column="0" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0701" Width="auto" Height="auto" Grid.Column="1" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0702" Width="auto" Height="auto" Grid.Column="2" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0703" Width="auto" Height="auto" Grid.Column="3" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0704" Width="auto" Height="auto" Grid.Column="4" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0705" Width="auto" Height="auto" Grid.Column="5" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0706" Width="auto" Height="auto" Grid.Column="6" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0707" Width="auto" Height="auto" Grid.Column="7" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0708" Width="auto" Height="auto" Grid.Column="8" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0709" Width="auto" Height="auto" Grid.Column="9" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0710" Width="auto" Height="auto" Grid.Column="10" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0711" Width="auto" Height="auto" Grid.Column="11" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0712" Width="auto" Height="auto" Grid.Column="12" Grid.Row="7" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0800" Width="auto" Height="auto" Grid.Column="0" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0801" Width="auto" Height="auto" Grid.Column="1" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0802" Width="auto" Height="auto" Grid.Column="2" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0803" Width="auto" Height="auto" Grid.Column="3" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0804" Width="auto" Height="auto" Grid.Column="4" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0805" Width="auto" Height="auto" Grid.Column="5" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0806" Width="auto" Height="auto" Grid.Column="6" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0807" Width="auto" Height="auto" Grid.Column="7" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0808" Width="auto" Height="auto" Grid.Column="8" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0809" Width="auto" Height="auto" Grid.Column="9" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0810" Width="auto" Height="auto" Grid.Column="10" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0811" Width="auto" Height="auto" Grid.Column="11" Grid.Row="8"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0812" Width="auto" Height="auto" Grid.Column="12" Grid.Row="8"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0800" Width="auto" Height="auto" Grid.Column="0" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0801" Width="auto" Height="auto" Grid.Column="1" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0802" Width="auto" Height="auto" Grid.Column="2" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0803" Width="auto" Height="auto" Grid.Column="3" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0804" Width="auto" Height="auto" Grid.Column="4" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0805" Width="auto" Height="auto" Grid.Column="5" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0806" Width="auto" Height="auto" Grid.Column="6" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0807" Width="auto" Height="auto" Grid.Column="7" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0808" Width="auto" Height="auto" Grid.Column="8" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0809" Width="auto" Height="auto" Grid.Column="9" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0810" Width="auto" Height="auto" Grid.Column="10" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0811" Width="auto" Height="auto" Grid.Column="11" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0812" Width="auto" Height="auto" Grid.Column="12" Grid.Row="8" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0900" Width="auto" Height="auto" Grid.Column="0" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0901" Width="auto" Height="auto" Grid.Column="1" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0902" Width="auto" Height="auto" Grid.Column="2" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0903" Width="auto" Height="auto" Grid.Column="3" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0904" Width="auto" Height="auto" Grid.Column="4" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0905" Width="auto" Height="auto" Grid.Column="5" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0906" Width="auto" Height="auto" Grid.Column="6" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0907" Width="auto" Height="auto" Grid.Column="7" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0908" Width="auto" Height="auto" Grid.Column="8" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0909" Width="auto" Height="auto" Grid.Column="9" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0910" Width="auto" Height="auto" Grid.Column="10" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0911" Width="auto" Height="auto" Grid.Column="11" Grid.Row="9"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_0912" Width="auto" Height="auto" Grid.Column="12" Grid.Row="9"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0900" Width="auto" Height="auto" Grid.Column="0" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0901" Width="auto" Height="auto" Grid.Column="1" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0902" Width="auto" Height="auto" Grid.Column="2" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0903" Width="auto" Height="auto" Grid.Column="3" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0904" Width="auto" Height="auto" Grid.Column="4" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0905" Width="auto" Height="auto" Grid.Column="5" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0906" Width="auto" Height="auto" Grid.Column="6" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0907" Width="auto" Height="auto" Grid.Column="7" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0908" Width="auto" Height="auto" Grid.Column="8" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0909" Width="auto" Height="auto" Grid.Column="9" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0910" Width="auto" Height="auto" Grid.Column="10" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0911" Width="auto" Height="auto" Grid.Column="11" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_0912" Width="auto" Height="auto" Grid.Column="12" Grid.Row="9" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1000" Width="auto" Height="auto" Grid.Column="0" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1001" Width="auto" Height="auto" Grid.Column="1" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1002" Width="auto" Height="auto" Grid.Column="2" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1003" Width="auto" Height="auto" Grid.Column="3" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1004" Width="auto" Height="auto" Grid.Column="4" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1005" Width="auto" Height="auto" Grid.Column="5" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1006" Width="auto" Height="auto" Grid.Column="6" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1007" Width="auto" Height="auto" Grid.Column="7" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1008" Width="auto" Height="auto" Grid.Column="8" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1009" Width="auto" Height="auto" Grid.Column="9" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1010" Width="auto" Height="auto" Grid.Column="10" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1011" Width="auto" Height="auto" Grid.Column="11" Grid.Row="10"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1012" Width="auto" Height="auto" Grid.Column="12" Grid.Row="10"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1000" Width="auto" Height="auto" Grid.Column="0" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1001" Width="auto" Height="auto" Grid.Column="1" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1002" Width="auto" Height="auto" Grid.Column="2" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1003" Width="auto" Height="auto" Grid.Column="3" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1004" Width="auto" Height="auto" Grid.Column="4" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1005" Width="auto" Height="auto" Grid.Column="5" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1006" Width="auto" Height="auto" Grid.Column="6" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1007" Width="auto" Height="auto" Grid.Column="7" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1008" Width="auto" Height="auto" Grid.Column="8" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1009" Width="auto" Height="auto" Grid.Column="9" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1010" Width="auto" Height="auto" Grid.Column="10" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1011" Width="auto" Height="auto" Grid.Column="11" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1012" Width="auto" Height="auto" Grid.Column="12" Grid.Row="10" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1100" Width="auto" Height="auto" Grid.Column="0" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1101" Width="auto" Height="auto" Grid.Column="1" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1102" Width="auto" Height="auto" Grid.Column="2" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1103" Width="auto" Height="auto" Grid.Column="3" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1104" Width="auto" Height="auto" Grid.Column="4" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1105" Width="auto" Height="auto" Grid.Column="5" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1106" Width="auto" Height="auto" Grid.Column="6" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1107" Width="auto" Height="auto" Grid.Column="7" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1108" Width="auto" Height="auto" Grid.Column="8" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1109" Width="auto" Height="auto" Grid.Column="9" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1110" Width="auto" Height="auto" Grid.Column="10" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1111" Width="auto" Height="auto" Grid.Column="11" Grid.Row="11"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1112" Width="auto" Height="auto" Grid.Column="12" Grid.Row="11"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1100" Width="auto" Height="auto" Grid.Column="0" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1101" Width="auto" Height="auto" Grid.Column="1" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1102" Width="auto" Height="auto" Grid.Column="2" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1103" Width="auto" Height="auto" Grid.Column="3" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1104" Width="auto" Height="auto" Grid.Column="4" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1105" Width="auto" Height="auto" Grid.Column="5" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1106" Width="auto" Height="auto" Grid.Column="6" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1107" Width="auto" Height="auto" Grid.Column="7" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1108" Width="auto" Height="auto" Grid.Column="8" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1109" Width="auto" Height="auto" Grid.Column="9" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1110" Width="auto" Height="auto" Grid.Column="10" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1111" Width="auto" Height="auto" Grid.Column="11" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1112" Width="auto" Height="auto" Grid.Column="12" Grid.Row="11" MouseLeftButtonDown="imgClick"/>
 
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1200" Width="auto" Height="auto" Grid.Column="0" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1201" Width="auto" Height="auto" Grid.Column="1" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1202" Width="auto" Height="auto" Grid.Column="2" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1203" Width="auto" Height="auto" Grid.Column="3" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1204" Width="auto" Height="auto" Grid.Column="4" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1205" Width="auto" Height="auto" Grid.Column="5" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1206" Width="auto" Height="auto" Grid.Column="6" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1207" Width="auto" Height="auto" Grid.Column="7" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1208" Width="auto" Height="auto" Grid.Column="8" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1209" Width="auto" Height="auto" Grid.Column="9" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1210" Width="auto" Height="auto" Grid.Column="10" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1211" Width="auto" Height="auto" Grid.Column="11" Grid.Row="12"/>
-            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1212" Width="auto" Height="auto" Grid.Column="12" Grid.Row="13"/>
-        </Grid>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1200" Width="auto" Height="auto" Grid.Column="0" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1201" Width="auto" Height="auto" Grid.Column="1" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1202" Width="auto" Height="auto" Grid.Column="2" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1203" Width="auto" Height="auto" Grid.Column="3" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1204" Width="auto" Height="auto" Grid.Column="4" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1205" Width="auto" Height="auto" Grid.Column="5" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1206" Width="auto" Height="auto" Grid.Column="6" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1207" Width="auto" Height="auto" Grid.Column="7" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1208" Width="auto" Height="auto" Grid.Column="8" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1209" Width="auto" Height="auto" Grid.Column="9" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1210" Width="auto" Height="auto" Grid.Column="10" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+        <Image Source="Resources/AngyCantera.png" x:Name="Grid_1211" Width="auto" Height="auto" Grid.Column="11" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+            <Image Source="Resources/AngyCantera.png" x:Name="Grid_1212" Width="auto" Height="auto" Grid.Column="12" Grid.Row="12" MouseLeftButtonDown="imgClick"/>
+    </Grid>
 </Window>

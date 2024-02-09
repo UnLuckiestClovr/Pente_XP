@@ -66,6 +66,16 @@ namespace Pente_WPFApp
                 }
             //imgary[0,0].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
         }
+
+        private void imgClick(object sender, MouseButtonEventArgs e)
+        {
+            Image imgSender = (Image)sender;
+            int row = Grid.GetRow(imgSender);
+            int col = Grid.GetColumn(imgSender);
+
+            boardLogic.placeBlack(row, col);
+            setupBoard();
+        }
     };
 
 

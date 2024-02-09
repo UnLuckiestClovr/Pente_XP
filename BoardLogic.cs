@@ -17,7 +17,7 @@ namespace Pente_WPFApp
         // Piece Placing Code
         public void placeBlack(int row, int column)
         {
-            if(row < 0 || row > 18 || column < 0 || column > 18) { return; }
+            if(row < 0 || row > 12 || column < 0 || column > 12) { return; }
 
             int[,] board = gameBoard.GetBoard();
 
@@ -48,7 +48,12 @@ namespace Pente_WPFApp
             //Diagonal Down-Right = [row+, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
+                
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i==3 && currentValue == 1) { 
@@ -60,7 +65,11 @@ namespace Pente_WPFApp
             //Down = [row, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -73,7 +82,11 @@ namespace Pente_WPFApp
             //Diagonal Down-Left = [row-, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -86,7 +99,11 @@ namespace Pente_WPFApp
             //Left = [row-, column]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -99,7 +116,11 @@ namespace Pente_WPFApp
             //Diagonal Up-Left = [row-, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -112,7 +133,11 @@ namespace Pente_WPFApp
             //Up = [row, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -125,7 +150,11 @@ namespace Pente_WPFApp
             //Diagonal Up-Right = [row+, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -139,7 +168,11 @@ namespace Pente_WPFApp
             //Right = [row+, column]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 1) { break; }
 
                 if (i == 3 && currentValue == 1)
@@ -159,7 +192,11 @@ namespace Pente_WPFApp
             //Diagonal Down-Right = [row+, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -172,7 +209,11 @@ namespace Pente_WPFApp
             //Down = [row, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -185,7 +226,11 @@ namespace Pente_WPFApp
             //Diagonal Down-Left = [row-, column+]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column + i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -198,7 +243,11 @@ namespace Pente_WPFApp
             //Left = [row-, column]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -211,7 +260,11 @@ namespace Pente_WPFApp
             //Diagonal Up-Left = [row-, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row - i), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -224,7 +277,11 @@ namespace Pente_WPFApp
             //Up = [row, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -237,7 +294,11 @@ namespace Pente_WPFApp
             //Diagonal Up-Right = [row+, column-]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column - i)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
@@ -251,7 +312,11 @@ namespace Pente_WPFApp
             //Right = [row+     , column]
             for (int i = 1; i < 4; i++)
             {
-                int currentValue = board[(row + i), (column)];
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
                 if (currentValue == 0 || currentValue == 2) { break; }
 
                 if (i == 3 && currentValue == 2)
