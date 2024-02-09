@@ -56,14 +56,15 @@ namespace Pente_WPFApp
                             imgary[k,l].Source = new BitmapImage(new Uri("Resources/empty.png", UriKind.Relative));
                             break;
                         case 1:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/whitecircle.png", UriKind.Relative));
+                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/bctp.png", UriKind.Relative));
                             break;
                         case 2:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/bctp.png", UriKind.Relative));
+                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/whitecircle.png", UriKind.Relative));
                             break;
 
                     }
                 }
+            //Console.WriteLine(board);
             //imgary[0,0].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
         }
 
@@ -72,9 +73,29 @@ namespace Pente_WPFApp
             Image imgSender = (Image)sender;
             int row = Grid.GetRow(imgSender);
             int col = Grid.GetColumn(imgSender);
+            if (boardLogic.getBoardState().GetBoard()[row, col] == 0)
+            {
+                boardLogic.placeWhite(row, col);
+                setupBoard();
+                placeRandomBlackPiece();
+            }
+        }
+        private void placeRandomBlackPiece()
+        {
 
-            boardLogic.placeBlack(row, col);
-            setupBoard();
+            while (true)
+            {
+                Random rand = new Random();
+                int randrow = rand.Next(13);
+                int randcol = rand.Next(13);
+                if (boardLogic.getBoardState().GetBoard()[randrow, randcol] == 0)
+                {
+                    boardLogic.placeBlack(randrow, randcol);
+                    setupBoard();
+                    break;
+                }
+            }
+
         }
     };
 
