@@ -7,9 +7,9 @@ using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
-    internal class BoardLogic
+    public class BoardLogic
     {
-        private Pente_Board gameBoard = new Pente_Board();
+        public Pente_Board gameBoard = new Pente_Board();
 
         // Returns Board from Backend Logic to Frontend for Viewing Logic
         public Pente_Board getBoardState() { return gameBoard; }
@@ -337,7 +337,7 @@ namespace Pente_WPFApp
         }
     }
 
-    class Pente_Board // Stores Board State
+    public class Pente_Board // Stores Board State
     {
         // 0 = Blank
         // 1 = Black
