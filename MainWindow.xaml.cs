@@ -19,16 +19,24 @@ namespace Pente_WPFApp
     {
         BoardLogic boardLogic = new BoardLogic();
 
+        // Win States
+        bool whiteWin = false;
+        bool blackWin = false;
+
+
         public MainWindow()
         {
             InitializeComponent();
             setupBoard();
         }
 
+
         private void StartOrResetBtn_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"{boardLogic.getBoardState().toString()}");
         }
+
+
         private void setupBoard()
         {
             Image[,] imgary = {{ Grid_0000, Grid_0001, Grid_0002, Grid_0003, Grid_0004, Grid_0005, Grid_0006, Grid_0007, Grid_0008, Grid_0009, Grid_0010, Grid_0011, Grid_0012 },
@@ -45,41 +53,66 @@ namespace Pente_WPFApp
                 { Grid_1100,Grid_1101,Grid_1102, Grid_1103, Grid_1104, Grid_1105, Grid_1106, Grid_1107, Grid_1108, Grid_1109, Grid_1110, Grid_1111, Grid_1112},
                 { Grid_1200,Grid_1201,Grid_1202, Grid_1203, Grid_1204, Grid_1205, Grid_1206, Grid_1207, Grid_1208, Grid_1209, Grid_1210, Grid_1211, Grid_1212},
             };
-                        Pente_Board pb = boardLogic.getBoardState();
-            int[,] board = pb.GetBoard();
+
+            int[,] board = boardLogic.getBoardState().GetBoard();
+
             for (int k = 0; k < board.GetLength(0); k++)
+            {
                 for (int l = 0; l < board.GetLength(1); l++)
                 {
-                    switch((board[k, l]))
+                    switch ((board[k, l]))
                     {
                         case 0:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/empty.png", UriKind.Relative));
+                            imgary[k, l].Source = new BitmapImage(new Uri("Resources/empty.png", UriKind.Relative));
                             break;
                         case 1:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/bctp.png", UriKind.Relative));
+                            imgary[k, l].Source = new BitmapImage(new Uri("Resources/bctp.png", UriKind.Relative));
                             break;
                         case 2:
-                            imgary[k,l].Source = new BitmapImage(new Uri("Resources/whitecircle.png", UriKind.Relative));
+                            imgary[k, l].Source = new BitmapImage(new Uri("Resources/whitecircle.png", UriKind.Relative));
                             break;
 
                     }
                 }
+            }
             //Console.WriteLine(board);
             //imgary[0,0].Source = new BitmapImage(new Uri("Resources/download.png", UriKind.Relative));
         }
+
 
         private void imgClick(object sender, MouseButtonEventArgs e)
         {
             Image imgSender = (Image)sender;
             int row = Grid.GetRow(imgSender);
             int col = Grid.GetColumn(imgSender);
+
             if (boardLogic.getBoardState().GetBoard()[row, col] == 0)
             {
                 boardLogic.placeWhite(row, col);
                 setupBoard();
+
+                whiteWin = boardLogic.checkWinWhite(boardLogic.getBoardState().GetBoard(), row, col);
+
                 placeRandomBlackPiece();
+
+                blackWin = boardLogic.checkWinBlack(boardLogic.getBoardState().GetBoard(), row, col);
+            }
+
+            if (whiteWin)
+            {
+                MessageBox.Show("White Wins!");
+                boardLogic.clearBoard();
+                setupBoard();
+            }
+            else if (blackWin)
+            {
+                MessageBox.Show("White Wins!");
+                boardLogic.clearBoard();
+                setupBoard();
             }
         }
+
+
         private void placeRandomBlackPiece()
         {
 

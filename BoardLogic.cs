@@ -361,6 +361,284 @@ namespace Pente_WPFApp
             return board;
         }
 
+        public bool checkWinWhite(int[,] board, int row, int column)
+        {
+            if (whiteCaptures >= 5)
+            {
+                return true;
+            }
+
+            //Diagonal Down-Right = [row+, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Down = [row, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row < 13 && column + i < 13)
+                {
+                    currentValue = board[(row), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Down-Left = [row-, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 0 && column + i < 13)
+                {
+                    currentValue = board[(row - i), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Left = [row-, column]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 0 && column < 13)
+                {
+                    currentValue = board[(row - i), (column)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Up-Left = [row-, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 13 && column - i >= 0)
+                {
+                    currentValue = board[(row - i), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Up = [row, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row < 13 && column - i >= 0)
+                {
+                    currentValue = board[(row), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Up-Right = [row+, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column - i >= 0)
+                {
+                    currentValue = board[(row + i), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+
+            //Right = [row+     , column]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column < 13)
+                {
+                    currentValue = board[(row + i), (column)];
+                }
+                if (currentValue == 0 || currentValue == 1) { break; }
+
+                if (i == 4 && currentValue == 2)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        public bool checkWinBlack(int[,] board, int row, int column)
+        {
+            if (blackCaptures >= 5)
+            {
+                return true;
+            }
+
+            //Diagonal Down-Right = [row+, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column + i < 13)
+                {
+                    currentValue = board[(row + i), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Down = [row, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row < 13 && column + i < 13)
+                {
+                    currentValue = board[(row), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Down-Left = [row-, column+]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 0 && column + i < 13)
+                {
+                    currentValue = board[(row - i), (column + i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Left = [row-, column]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 0 && column < 13)
+                {
+                    currentValue = board[(row - i), (column)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Up-Left = [row-, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row - i >= 13 && column - i >= 0)
+                {
+                    currentValue = board[(row - i), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Up = [row, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row < 13 && column - i >= 0)
+                {
+                    currentValue = board[(row), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            //Diagonal Up-Right = [row+, column-]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column - i >= 0)
+                {
+                    currentValue = board[(row + i), (column - i)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+
+            //Right = [row+     , column]
+            for (int i = 1; i < 5; i++)
+            {
+                int currentValue = 0;
+                if (row + i < 13 && column < 13)
+                {
+                    currentValue = board[(row + i), (column)];
+                }
+                if (currentValue == 0 || currentValue == 2) { break; }
+
+                if (i == 4 && currentValue == 1)
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
 
         // Reset / Clear Board
         public void clearBoard()
