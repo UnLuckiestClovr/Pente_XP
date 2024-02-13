@@ -9,7 +9,10 @@ namespace Pente_WPFApp
 {
     public class BoardLogic
     {
-        public Pente_Board gameBoard = new Pente_Board();
+        int whiteCaptures = 0;
+        int blackCaptures = 0;
+        int winner = 0; // 1 for player win 2 for ai win
+        private Pente_Board gameBoard = new Pente_Board();
 
         // Returns Board from Backend Logic to Frontend for Viewing Logic
         public Pente_Board getBoardState() { return gameBoard; }
@@ -17,28 +20,41 @@ namespace Pente_WPFApp
         // Piece Placing Code
         public void placeBlack(int row, int column)
         {
-            if(row < 0 || row > 12 || column < 0 || column > 12) { return; }
+            if (winner < 1)
+            {
+                if (row < 0 || row > 12 || column < 0 || column > 12) { return; }
 
-            int[,] board = gameBoard.GetBoard();
+                int[,] board = gameBoard.GetBoard();
 
-            board[row, column] = 1;
+                board[row, column] = 1;
 
-            board = checkCapture_Black(board, row, column);
+                board = checkCapture_Black(board, row, column);
 
-            gameBoard.SetBoard(board);
+                gameBoard.SetBoard(board);
+                if (whiteCaptures >= 5)
+                {
+                    winner = 2;
+                }
+            }
         }
 
         public void placeWhite(int row, int column)
         {
-            if (row < 0 || row > 18 || column < 0 || column > 18) { return; }
+            if (winner < 1) {
+                if (row < 0 || row > 18 || column < 0 || column > 18) { return; }
 
-            int[,] board = gameBoard.GetBoard();
+                int[,] board = gameBoard.GetBoard();
 
-            board[row, column] = 2;
+                board[row, column] = 2;
 
-            board = checkCapture_White(board, row, column);
+                board = checkCapture_White(board, row, column);
 
-            gameBoard.SetBoard(board);
+                gameBoard.SetBoard(board);
+                if (whiteCaptures >= 5)
+                {
+                    winner = 1;
+                }
+            }
         }
 
         // "Capture" Code [ Can Capture exactly 2 Tiles, no less no more ]
@@ -54,11 +70,12 @@ namespace Pente_WPFApp
                     currentValue = board[(row + i), (column + i)];
                 }
                 
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i==3 && currentValue == 1) { 
                     board[(row + 1), (column + 1)] = 0; 
-                    board[(row + 2), (column + 2)] = 0; 
+                    board[(row + 2), (column + 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -70,12 +87,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row), (column + 1)] = 0;
                     board[(row), (column + 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -87,12 +105,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row - 1), (column + 1)] = 0;
                     board[(row - 2), (column + 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -104,12 +123,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row - 1), (column)] = 0;
                     board[(row - 2), (column)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -121,12 +141,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row - 1), (column - 1)] = 0;
                     board[(row - 2), (column - 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -138,12 +159,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row), (column - 1)] = 0;
                     board[(row), (column - 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -155,12 +177,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row + 1), (column - 1)] = 0;
                     board[(row + 2), (column - 2)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -173,12 +196,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 1) { break; }
+                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 1)
                 {
                     board[(row + 1), (column)] = 0;
                     board[(row + 2), (column)] = 0;
+                    blackCaptures++;
                 }
             }
 
@@ -197,12 +221,13 @@ namespace Pente_WPFApp
                 {
                     currentValue = board[(row + i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row + 1), (column + 1)] = 0;
                     board[(row + 2), (column + 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -210,16 +235,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row < 13 && column + i < 13)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row), (column + 1)] = 0;
                     board[(row), (column + 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -227,16 +253,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row - i >= 0 && column + i < 13)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row - i), (column + i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row - 1), (column + 1)] = 0;
                     board[(row - 2), (column + 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -244,16 +271,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row - i >= 0 && column < 13)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row - i), (column)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row - 1), (column)] = 0;
                     board[(row - 2), (column)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -261,16 +289,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row - i >= 13 && column - i >= 0)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row - i), (column - i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row - 1), (column - 1)] = 0;
                     board[(row - 2), (column - 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -278,16 +307,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row < 13 && column -i >= 0)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row), (column - i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row), (column - 1)] = 0;
                     board[(row), (column - 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -295,16 +325,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row + i < 13 && column - i >= 0)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row + i), (column - i)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row + 1), (column - 1)] = 0;
                     board[(row + 2), (column - 2)] = 0;
+                    whiteCaptures++;
                 }
             }
 
@@ -313,16 +344,17 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column + i < 13)
+                if (row + i < 13 && column < 13)
                 {
-                    currentValue = board[(row + i), (column + i)];
+                    currentValue = board[(row + i), (column)];
                 }
-                if (currentValue == 0 || currentValue == 2) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
                     board[(row + 1), (column)] = 0;
                     board[(row + 2), (column)] = 0;
+                    whiteCaptures++;
                 }
             }
 
