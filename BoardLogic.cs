@@ -12,7 +12,7 @@ namespace Pente_WPFApp
         int whiteCaptures = 0;
         int blackCaptures = 0;
         int winner = 0; // 1 for player win 2 for ai win
-        private Pente_Board gameBoard = new Pente_Board();
+        public Pente_Board gameBoard = new Pente_Board();
 
         // Returns Board from Backend Logic to Frontend for Viewing Logic
         public Pente_Board getBoardState() { return gameBoard; }
