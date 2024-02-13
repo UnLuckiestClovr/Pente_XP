@@ -644,6 +644,10 @@ namespace Pente_WPFApp
         public void clearBoard()
         {
             gameBoard = new Pente_Board();
+            whiteCaptures = 0;
+            blackCaptures = 0;
+            winner = 0;
+
         }
     }
 
