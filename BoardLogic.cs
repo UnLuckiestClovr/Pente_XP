@@ -7,6 +7,12 @@ using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
+    // Board needs to be in a changeable setup between 9x9 and 39x39 ; MUST BE ODD
+    // Sets first Pin in center point
+    // Save / Load Functions
+    // File Persistence through JSON, YAML, or XML
+
+
     internal class BoardLogic
     {
         int whiteCaptures = 0;
