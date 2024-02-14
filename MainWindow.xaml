@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Pente_WPFApp"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="800">
+        Title="MainWindow" Height="1000" Width="1000">
     <Grid x:Name="MainGrid">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
@@ -19,18 +19,18 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="5*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="68*"/>
+                <RowDefinition Height="111*"/>
             </Grid.RowDefinitions>
 
-            <TextBlock Text="Number of Rows and Colums Between 9 and 39 (MUST BE ODD) : " Grid.Column="1" HorizontalAlignment="Center" FontFamily="Arial Black" />
-            <TextBox Grid.Row="0" Grid.Column="1" Width="92" HorizontalAlignment="Center" Margin="0,20,0,45"/>
+            <TextBlock Text="Number of Rows and Colums Between 9 and 39 (MUST BE ODD) : " Grid.Column="1" HorizontalAlignment="Center" FontFamily="Arial Black" Width="430" />
+            <TextBox Grid.Row="0" Grid.Column="1" Width="92" HorizontalAlignment="Center" Margin="0,20,0,10"/>
 
-            <Grid Grid.Row="1" Grid.Column="1">
+            <Grid Grid.Row="1" Grid.ColumnSpan="3" Margin="114,5,114,0">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>

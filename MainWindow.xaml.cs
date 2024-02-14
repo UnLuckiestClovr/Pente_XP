@@ -154,9 +154,7 @@ namespace Pente_WPFApp
 
                 whiteWin = boardLogic.checkWinWhite(boardLogic.getBoardState().GetBoard(), row, col);
 
-                placeRandomBlackPiece();
-
-                blackWin = boardLogic.checkWinBlack(boardLogic.getBoardState().GetBoard(), row, col);
+                blackWin = placeRandomBlackPiece();
             }
 
             if (whiteWin)
@@ -167,21 +165,22 @@ namespace Pente_WPFApp
             }
             else if (blackWin)
             {
-                MessageBox.Show("White Wins!");
+                MessageBox.Show("Black Wins!");
                 boardLogic.clearBoard();
                 setupBoard();
             }
         }
 
 
-        private void placeRandomBlackPiece()
+        private bool placeRandomBlackPiece()
         {
-
+            int randrow = 0;
+            int randcol = 0;
             while (true)
             {
                 Random rand = new Random();
-                int randrow = rand.Next(boardSize);
-                int randcol = rand.Next(boardSize);
+                randrow = rand.Next(boardSize);
+                randcol = rand.Next(boardSize);
                 if (boardLogic.getBoardState().GetBoard()[randrow, randcol] == 0)
                 {
                     boardLogic.placeBlack(randrow, randcol);
@@ -189,6 +188,8 @@ namespace Pente_WPFApp
                     break;
                 }
             }
+
+            return boardLogic.checkWinBlack(boardLogic.getBoardState().GetBoard(), randrow, randcol);
 
         }
     };

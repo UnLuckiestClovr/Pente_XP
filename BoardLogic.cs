@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
-    internal class BoardLogic
+    public class BoardLogic
     {
         public int whiteCaptures = 0;
         public int blackCaptures = 0;
@@ -254,7 +254,7 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row - i >= 0 && column + i < 13)
+                if (row - i >= 0 && column + i < boardSize)
                 {
                     currentValue = board[(row - i), (column + i)];
                 }
@@ -326,7 +326,7 @@ namespace Pente_WPFApp
             for (int i = 1; i < 4; i++)
             {
                 int currentValue = 0;
-                if (row + i < 13 && column - i >= 0)
+                if (row + i < boardSize && column - i >= 0)
                 {
                     currentValue = board[(row + i), (column - i)];
                 }
@@ -576,7 +576,7 @@ namespace Pente_WPFApp
             for (int i = 1; i < 5; i++)
             {
                 int currentValue = 0;
-                if (row - i >= boardSize && column - i >= 0)
+                if (row - i > 0 && column - i >= 0)
                 {
                     currentValue = board[(row - i), (column - i)];
                 }
