@@ -7,18 +7,12 @@ using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
-    // Board needs to be in a changeable setup between 9x9 and 39x39 ; MUST BE ODD
-    // Sets first Pin in center point
-    // Save / Load Functions
-    // File Persistence through JSON, YAML, or XML
-
-
     internal class BoardLogic
     {
-        int whiteCaptures = 0;
-        int blackCaptures = 0;
-        int winner = 0; // 1 for player win 2 for ai win
-        private Pente_Board gameBoard = new Pente_Board();
+        public int whiteCaptures = 0;
+        public int blackCaptures = 0;
+        public int winner = 0; // 1 for player win 2 for ai win
+        public Pente_Board gameBoard = new Pente_Board();
 
         // Returns Board from Backend Logic to Frontend for Viewing Logic
         public Pente_Board getBoardState() { return gameBoard; }
@@ -37,7 +31,7 @@ namespace Pente_WPFApp
                 board = checkCapture_Black(board, row, column);
 
                 gameBoard.SetBoard(board);
-                if (whiteCaptures >= 5)
+                if (blackCaptures >= 5)
                 {
                     winner = 2;
                 }
@@ -650,10 +644,14 @@ namespace Pente_WPFApp
         public void clearBoard()
         {
             gameBoard = new Pente_Board();
+            whiteCaptures = 0;
+            blackCaptures = 0;
+            winner = 0;
+
         }
     }
 
-    class Pente_Board // Stores Board State
+    public class Pente_Board // Stores Board State
     {
         // 0 = Blank
         // 1 = Black
