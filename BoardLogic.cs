@@ -436,7 +436,7 @@ namespace Pente_WPFApp
             for (int i = 1; i < 5; i++)
             {
                 int currentValue = 0;
-                if (row - i <= 13 && column - i >= 0)
+                if (row - i > 0 && column - i >= 0)
                 {
                     currentValue = board[(row - i), (column - i)];
                 }
