@@ -24,6 +24,8 @@ namespace Pente_WPFApp
         bool whiteWin = false;
         bool blackWin = false;
 
+        int boardSize = 9;
+
 
         Image[,] imgary;
 
@@ -31,7 +33,10 @@ namespace Pente_WPFApp
         {
             InitializeComponent();
 
+            CreateGrid(boardSize);
             AddImagesToGrid();
+
+            boardLogic.gameBoard.newBoard(boardSize);
 
             setupBoard();
         }
@@ -40,6 +45,38 @@ namespace Pente_WPFApp
         private void StartOrResetBtn_Click(object sender, RoutedEventArgs e)
         {
             MessageBox.Show($"{boardLogic.getBoardState().toString()}");
+        }
+
+
+        private void CreateGrid(int rowsandcolumns)
+        {
+            // Clear Original Grid if Able
+            MainGrid.Children.Clear();
+
+            PenteBoard_Grid = new Grid();
+            PenteBoard_Grid.Name = "PenteBoard_Grid";
+            PenteBoard_Grid.Width = 500;
+            PenteBoard_Grid.Height = 500;
+            PenteBoard_Grid.HorizontalAlignment = HorizontalAlignment.Center;
+            PenteBoard_Grid.VerticalAlignment = VerticalAlignment.Center;
+            PenteBoard_Grid.Background = System.Windows.Media.Brushes.LightGray;
+
+            Grid.SetRow(PenteBoard_Grid, 1);
+
+
+            for (int i = 0; i < rowsandcolumns; i++)
+            {
+                ColumnDefinition columnDefinition = new ColumnDefinition();
+                columnDefinition.Width = new GridLength(1, GridUnitType.Star);
+                PenteBoard_Grid.ColumnDefinitions.Add(columnDefinition);
+
+                RowDefinition rowDefinition = new RowDefinition();
+                rowDefinition.Height = new GridLength(1, GridUnitType.Star);
+                PenteBoard_Grid.RowDefinitions.Add(rowDefinition);
+            }
+
+            // Add the new Grid to the parent container
+            MainGrid.Children.Add(PenteBoard_Grid);
         }
 
 
@@ -143,8 +180,8 @@ namespace Pente_WPFApp
             while (true)
             {
                 Random rand = new Random();
-                int randrow = rand.Next(13);
-                int randcol = rand.Next(13);
+                int randrow = rand.Next(boardSize);
+                int randcol = rand.Next(boardSize);
                 if (boardLogic.getBoardState().GetBoard()[randrow, randcol] == 0)
                 {
                     boardLogic.placeBlack(randrow, randcol);
