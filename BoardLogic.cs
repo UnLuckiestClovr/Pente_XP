@@ -9,9 +9,9 @@ namespace Pente_WPFApp
 {
     public class BoardLogic
     {
-        int whiteCaptures = 0;
-        int blackCaptures = 0;
-        int winner = 0; // 1 for player win 2 for ai win
+        public int whiteCaptures = 0;
+        public int blackCaptures = 0;
+        public int winner = 0; // 1 for player win 2 for ai win
         public Pente_Board gameBoard = new Pente_Board();
 
         // Returns Board from Backend Logic to Frontend for Viewing Logic
@@ -31,7 +31,7 @@ namespace Pente_WPFApp
                 board = checkCapture_Black(board, row, column);
 
                 gameBoard.SetBoard(board);
-                if (whiteCaptures >= 5)
+                if (blackCaptures >= 5)
                 {
                     winner = 2;
                 }
