@@ -7,7 +7,7 @@ using System.Windows.Controls;
 
 namespace Pente_WPFApp
 {
-    public class BoardLogic
+    internal class BoardLogic
     {
         public int whiteCaptures = 0;
         public int blackCaptures = 0;
