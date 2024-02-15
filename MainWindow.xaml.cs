@@ -27,7 +27,7 @@ namespace Pente_WPFApp
         int boardSize = 9;
 
 
-        Image[,] imgary;
+        Image[,] imgary = new Image[0,0];
 
         public MainWindow()
         {

@@ -679,6 +679,7 @@ namespace Pente_WPFApp
         public void newBoard(int rowsAndColumns)
         {
             board = new int[rowsAndColumns,rowsAndColumns];
+            int middleRow = ((rowsAndColumns - 1) / 2);
 
             for (int rows = 0; rows < rowsAndColumns; rows++)
             {
@@ -687,6 +688,8 @@ namespace Pente_WPFApp
                     board[rows, columns] = 0;
                 }
             }
+
+            board[middleRow, middleRow] = 1;
         }
 
         public int[,] GetBoard() { return board; }
