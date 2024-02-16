@@ -611,7 +611,7 @@ namespace Pente_WPFApp
                 int currentValue = 0;
                 if (row < boardSize && column - i >= 0)
                 {
-                    if ((row - i) < 0) { break; }
+                    if ((column - i) < 0) { break; }
                     currentValue = board[(row), (column - i)];
                 }
                 if (currentValue == 0 || currentValue == 2) { break; }
@@ -732,7 +732,7 @@ namespace Pente_WPFApp
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //3
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //4
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //5
-            { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //6
+            { 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0 }, //6
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //7
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //8
             { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 }, //9
