@@ -213,7 +213,7 @@ namespace Pente_WPFApp
                 file.Close();
                 Console.Write(strList.ToArray());
                 int boardSize = int.Parse(strList.ToArray().GetValue(0).ToString());
-                boardSizeLabel.Content = boardSize + "";
+                //boardSizeLabel.Content = boardSize + "";
                 //create game
                 int[,] board = { };
                 List<int[]> boardList = new List<int[]>();
