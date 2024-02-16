@@ -212,15 +212,22 @@ namespace Pente_WPFApp
                 //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
                 file.Close();
                 Console.Write(strList.ToArray());
-                int boardSize = int.Parse(strList.ToArray().GetValue(0).ToString());
-                boardSizeLabel.Content = boardSize + "";
+                int boardSize2 = int.Parse(strList.ToArray().GetValue(0).ToString());
+
+                CreateGrid(boardSize2 - 1);
+                AddImagesToGrid();
+                this.boardSize = boardSize2 - 1;
+                boardLogic.gameBoard.newBoard(boardSize2 - 1);
+
+                setupBoard();
+                //boardSizeLabel.Content = boardSize2 + ""; // -----------------------------------------------
                 //create game
                 int[,] board = { };
                 List<int[]> boardList = new List<int[]>();
-                for (int i = 1; i < boardSize; i++)
+                for (int i = 1; i < boardSize2; i++)
                 {
-                    int[] boardRow = new int[boardSize - 1];
-                    for (int j = 0; j < boardSize - 1; j++)
+                    int[] boardRow = new int[boardSize2 - 1];
+                    for (int j = 0; j < boardSize2 - 1; j++)
                     {
 
                         boardRow[j] = (int)char.GetNumericValue((strList[i])[j]);
@@ -248,14 +255,16 @@ namespace Pente_WPFApp
             using (StreamWriter file = new StreamWriter("../../../gameState.txt"))
             {
 
-                int boardSize = (int)Math.Sqrt(boardLogic.getBoardState().GetBoard().Length);
-                file.WriteLine(boardSize + 1);
+                int boardSize2 = (int)Math.Sqrt(boardLogic.getBoardState().GetBoard().Length);
+
+                
+                file.WriteLine(boardSize2 + 1);
                 //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
                 //Console.Write(strList.ToArray());
-                for (int i = 0; i < boardSize; i++)
+                for (int i = 0; i < boardSize2; i++)
                 {
                     string boardString = "";
-                    for (int j = 0; j < boardSize; j++)
+                    for (int j = 0; j < boardSize2; j++)
                     {
 
                         boardString += (boardLogic.getBoardState().GetBoard()[i,j]);
