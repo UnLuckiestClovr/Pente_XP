@@ -218,6 +218,9 @@ namespace Pente_WPFApp
                 AddImagesToGrid();
                 this.boardSize = boardSize2 - 1;
                 boardLogic.gameBoard.newBoard(boardSize2 - 1);
+                boardLogic.winner = 0;
+                whiteWin = false;
+                blackWin = false;
 
                 setupBoard();
                 boardSizeDisplay.Text = boardSize2 - 1 + ""; // -----------------------------------------------
