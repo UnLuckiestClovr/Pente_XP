@@ -63,7 +63,7 @@ namespace Pente_WPFApp
             PenteBoard_Grid.Height = 500;
             PenteBoard_Grid.HorizontalAlignment = HorizontalAlignment.Center;
             PenteBoard_Grid.VerticalAlignment = VerticalAlignment.Center;
-            PenteBoard_Grid.Background = System.Windows.Media.Brushes.LightGray;
+            PenteBoard_Grid.Background = System.Windows.Media.Brushes.Beige;
 
             Grid.SetRow(PenteBoard_Grid, 1);
 
