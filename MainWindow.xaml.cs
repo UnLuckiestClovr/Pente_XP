@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Collections;
 using System.Data.Common;
+using System.IO;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -8,6 +10,7 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Media.TextFormatting;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
@@ -23,6 +26,7 @@ namespace Pente_WPFApp
         // Win States
         bool whiteWin = false;
         bool blackWin = false;
+        FileStream fs = File.Create("gameState.txt");
 
 
         Image[,] imgary;
@@ -76,7 +80,7 @@ namespace Pente_WPFApp
 
         private void setupBoard()
         {
-            
+
 
             int[,] board = boardLogic.getBoardState().GetBoard();
 
@@ -154,7 +158,79 @@ namespace Pente_WPFApp
             }
 
         }
-    };
+
+        private void loadGame_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> strList = new List<string>();
+            using (StreamReader file = new StreamReader("../../../gameState.txt"))
+            {
+                string ln;
+
+                while ((ln = file.ReadLine()) != null)
+                {
+                    Console.WriteLine(ln);
+                    strList.Add(ln);
+                }
+                //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
+                file.Close();
+                Console.Write(strList.ToArray());
+                int boardSize = int.Parse(strList.ToArray().GetValue(0).ToString());
+                boardSizeLabel.Content = boardSize + "";
+                //create game
+                int[,] board = { };
+                List<int[]> boardList = new List<int[]>();
+                for (int i = 1; i < boardSize; i++)
+                {
+                    int[] boardRow = new int[boardSize - 1];
+                    for (int j = 0; j < boardSize - 1; j++)
+                    {
+
+                        boardRow[j] = (int)char.GetNumericValue((strList[i])[j]);
+                    }
+                    boardList.Add(boardRow);
+                }
+                for (int i = 0; i < boardList.Count; i++)
+                {
+                    for (int j = 0; j < boardList.Count; j++)
+                    {
+                        //int holdint = boardList[i][j];
+                        boardLogic.getBoardState().GetBoard()[i, j] = boardList[i][j];
+                    }
+                }
+                //Console.WriteLine(boardLogic.getBoardState().GetBoard());
+                setupBoard();
+            }
+
+        }
+
+
+        private void saveGame_Click(object sender, RoutedEventArgs e)
+        {
+            List<string> strList = new List<string>();
+            using (StreamWriter file = new StreamWriter("../../../gameState.txt"))
+            {
+
+                int boardSize = (int)Math.Sqrt(boardLogic.getBoardState().GetBoard().Length);
+                file.WriteLine(boardSize + 1);
+                //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
+                //Console.Write(strList.ToArray());
+                for (int i = 0; i < boardSize; i++)
+                {
+                    string boardString = "";
+                    for (int j = 0; j < boardSize; j++)
+                    {
+
+                        boardString += (boardLogic.getBoardState().GetBoard()[i,j]);
+                    }
+                    file.WriteLine(boardString);
+                    
+                }
+                file.Close();
+
+            }
+
+        }
+    }
 
 
         

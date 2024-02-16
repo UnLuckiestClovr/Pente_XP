@@ -16,6 +16,14 @@
             <RowDefinition Height="69*"/>
         </Grid.RowDefinitions>
 
+        <Button Name="newGame" Background="LightGray" Content="Start Game" Margin="150,122,560,1"></Button>
+        <TextBox Name="boardSize" Margin="306,146,468,3" FontSize="18" Width="26" Height="30">13</TextBox>
+        <Label Name="boardSizeLabel" Margin="291,125,451,29"  FontSize="10" Width="58" Height="25" Grid.Row="0">Board Size</Label>
+        <Button Name="loadGame" Background="LightGray" Content="Load Game" Margin="355,124,355,1" Click="loadGame_Click"></Button>
+        <Button Name="saveGame" Background="LightGray" Content="Save Game" Margin="461,125,259,0" Click="saveGame_Click"/>
+
+
+
         <Grid x:Name="PenteBoard_Grid" Width="500" Height="500" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#FFCFB5B5" Grid.Column="1" Grid.Row="1">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
