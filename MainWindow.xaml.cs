@@ -220,7 +220,7 @@ namespace Pente_WPFApp
                 boardLogic.gameBoard.newBoard(boardSize2 - 1);
 
                 setupBoard();
-                //boardSizeLabel.Content = boardSize2 + ""; // -----------------------------------------------
+                boardSizeDisplay.Text = boardSize2 - 1 + ""; // -----------------------------------------------
                 //create game
                 int[,] board = { };
                 List<int[]> boardList = new List<int[]>();
