@@ -63,7 +63,7 @@ namespace Pente_WPFApp
             PenteBoard_Grid.Height = 500;
             PenteBoard_Grid.HorizontalAlignment = HorizontalAlignment.Center;
             PenteBoard_Grid.VerticalAlignment = VerticalAlignment.Center;
-            PenteBoard_Grid.Background = System.Windows.Media.Brushes.LightGray;
+            PenteBoard_Grid.Background = System.Windows.Media.Brushes.Beige;
 
             Grid.SetRow(PenteBoard_Grid, 1);
 
@@ -213,7 +213,7 @@ namespace Pente_WPFApp
                 file.Close();
                 Console.Write(strList.ToArray());
                 int boardSize = int.Parse(strList.ToArray().GetValue(0).ToString());
-                boardSizeLabel.Content = boardSize + "";
+                //boardSizeLabel.Content = boardSize + "";
                 //create game
                 int[,] board = { };
                 List<int[]> boardList = new List<int[]>();
