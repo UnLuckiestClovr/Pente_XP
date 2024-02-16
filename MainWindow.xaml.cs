@@ -48,7 +48,21 @@ namespace Pente_WPFApp
 
         private void StartOrResetBtn_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show($"{boardLogic.getBoardState().toString()}");
+            int boardnum = 9;
+            int.TryParse(boardSizeDisplay.Text, out boardnum);
+            
+            if (boardnum % 2 == 1 && boardnum >= 9 && boardnum <= 39)
+            {
+                boardSize = boardnum;
+                boardLogic.boardSize = boardSize;
+            }
+
+            CreateGrid(boardSize);
+            AddImagesToGrid();
+
+            boardLogic.gameBoard.newBoard(boardSize);
+
+            setupBoard();
         }
 
 
