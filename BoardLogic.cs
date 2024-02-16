@@ -302,7 +302,7 @@ namespace Pente_WPFApp
                     if ((row - i) < 0 || (column - i) < 0) { break; }
                     currentValue = board[(row - i), (column - i)];
                 }
-                if (currentValue == 0 || (currentValue == 1 && i < 3)) { break; }
+                if (currentValue == 0 || (currentValue == 2 && i < 3)) { break; }
 
                 if (i == 3 && currentValue == 2)
                 {
