@@ -51,7 +51,7 @@ namespace Pente_WPFApp
         private void CreateGrid(int rowsandcolumns)
         {
             // Clear Original Grid if Able
-            MainGrid.Children.Clear();
+            BoardContainer.Children.Clear();
 
             PenteBoard_Grid = new Grid();
             PenteBoard_Grid.Name = "PenteBoard_Grid";
@@ -76,7 +76,7 @@ namespace Pente_WPFApp
             }
 
             // Add the new Grid to the parent container
-            MainGrid.Children.Add(PenteBoard_Grid);
+            BoardContainer.Children.Add(PenteBoard_Grid);
         }
 
 
