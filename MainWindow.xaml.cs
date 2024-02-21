@@ -16,6 +16,7 @@ using System.Windows.Shapes;
 
 namespace Pente_WPFApp
 {
+
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
@@ -35,6 +36,9 @@ namespace Pente_WPFApp
 
         public MainWindow()
         {
+
+            // up check doesnt work
+            // down right check doesnt work
             InitializeComponent();
 
             CreateGrid(boardSize);
@@ -56,6 +60,8 @@ namespace Pente_WPFApp
                 boardSize = boardnum;
                 boardLogic.boardSize = boardSize;
             }
+            boardLogic.whiteCaptures = 0;
+            boardLogic.blackCaptures = 0;
 
             CreateGrid(boardSize);
             AddImagesToGrid();
@@ -223,7 +229,6 @@ namespace Pente_WPFApp
                     Console.WriteLine(ln);
                     strList.Add(ln);
                 }
-                //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
                 file.Close();
                 Console.Write(strList.ToArray());
                 int boardSize2 = int.Parse(strList.ToArray().GetValue(0).ToString());
@@ -233,6 +238,8 @@ namespace Pente_WPFApp
                 this.boardSize = boardSize2 - 1;
                 boardLogic.gameBoard.newBoard(boardSize2 - 1);
                 boardLogic.winner = 0;
+                boardLogic.whiteCaptures = 0;
+                boardLogic.blackCaptures = 0;
                 whiteWin = false;
                 blackWin = false;
 
@@ -276,8 +283,6 @@ namespace Pente_WPFApp
 
                 
                 file.WriteLine(boardSize2 + 1);
-                //C: \Users\Eli\source\repos\Pente_XP\gameState.txt
-                //Console.Write(strList.ToArray());
                 for (int i = 0; i < boardSize2; i++)
                 {
                     string boardString = "";
